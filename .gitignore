@@ -1,0 +1,23 @@
+# Node.js dependencies
+node_modules/
+
+# TypeScript build output
+dist/
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+
+# IDE settings
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# Miscellaneous
+*.tmp
+*.temp
+*.bak
