@@ -23,3 +23,11 @@ export function deleteTask(id: string) {
   */
   tasks = tasks.filter(task => task.id !== id);
 }
+
+export function toggleTask(id: string) {
+  tasks = tasks.map(task => 
+    task.id === id
+      ? { ...task, completed: !task.completed }
+      : task
+  );
+}
