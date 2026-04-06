@@ -15,3 +15,11 @@ export function addTask(text: string) {
 
   tasks.push(newTask);
 }
+
+export function deleteTask(id: string) {
+  /*
+    * Deletes a task by filtering out the task with the given id from the tasks array
+    * The filter method creates a new array with all tasks except the one with the matching id
+  */
+  tasks = tasks.filter(task => task.id !== id);
+}
